@@ -17,23 +17,22 @@ When a testbench violation occurs, the tool will automatically run a LLM locally
 
 ## Structure
 
-WAVE_DEBUGGER
-|__debugger
-|   |__cocotb_utils.py #Debug utilities
-|   |__config.py 
-|   |__ollama_client.py #To interface with LLM
-|   |__vcd_formatter.py #Process VCD data into concise, csv file
-|   
-|__sample_designs
-   |__sync_fifo_tb.py #cocotb testbench
-   |__sync_fifo.sv #RTL file
-   |__Makefile
-   |__results #Where logs/analysis is dumped
+- WAVE_DEBUGGER
+   - debugger
+      - cocotb_utils.py #Debug utilities
+      - config.py
+      - ollama_client.py #To interface with LLM
+      - vcd_formatter.py #Process VCD data into concise, csv file
+   - sample_designs
+      - sync_fifo_tb.py #cocotb testbench
+      - sync_fifo.sv #RTL file
+      - Makefile
+      - results/ #Folder where logs/analysis is dumped
 
 
 ---
 
-## Configuration Parameters
+## Configuration Parameter Options
 - DEBUGGER_ENABLED = True  
 - OLLAMA_MODEL = "mistral" 
 
@@ -67,6 +66,6 @@ make TESTCASE=sync_fifo_basic_test
 - VCD waveform currently dumps to the working directory by default; no straightforward way to change this yet.
 - Capturing the precise "violation window" from logs could be improved, potentially using design details (pipeline depth, etc.).
 - Waveform visualization or GUI integration is not available yet.
-- This is an experimental tool; trying other LLMs or fine-tuned models may provide better analysis results.
+- This is an experimental project; It will be good to try many other LLMs or fine-tuned models to compare analysis results.
 
 
