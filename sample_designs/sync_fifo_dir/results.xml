@@ -1,0 +1,11 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1759821547" />
+    <testcase name="sync_fifo_basic_test" classname="debugger.cocotb_utils" file="/home/krishkarth/Projects/WAVE_DEBUGGER/debugger/cocotb_utils.py" lineno="38" time="97.07368755340576" sim_time_ns="10.095" ratio_time="0.10399316492892234">
+      <failure error_type="AssertionError" error_msg="3 violations detected in test 'sync_fifo_basic_test'." />
+    </testcase>
+    <testcase name="sync_fifo_overflow_underflow_test" classname="debugger.cocotb_utils" file="/home/krishkarth/Projects/WAVE_DEBUGGER/debugger/cocotb_utils.py" lineno="38" time="0" sim_time_ns="0" ratio_time="0">
+      <skipped />
+    </testcase>
+  </testsuite>
+</testsuites>

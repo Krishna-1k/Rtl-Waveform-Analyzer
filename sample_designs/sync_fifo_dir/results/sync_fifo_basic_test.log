@@ -1,0 +1,21 @@
+2025-10-07 00:19:09,012 INFO     cocotb: Read data: 00000001
+2025-10-07 00:19:09,012 INFO     cocotb: Read data: 00000000
+2025-10-07 00:19:09,012 ERROR    cocotb: VIOLATION at 75.0 ps: Read data mismatch: got 0, expected 2
+2025-10-07 00:19:09,012 INFO     cocotb: Read data: 00000010
+2025-10-07 00:19:09,013 ERROR    cocotb: VIOLATION at 85.0 ps: Read data mismatch: got 2, expected 3
+2025-10-07 00:19:09,013 INFO     cocotb: Read data: 00000000
+2025-10-07 00:19:09,013 ERROR    cocotb: VIOLATION at 95.0 ps: Read data mismatch: got 0, expected 4
+2025-10-07 00:20:46,067 WARNING  cocotb.Test sync_fifo_basic_test.with_debug_tool.<locals>.decorator.<locals>.wrapper: 3 violations detected in test 'sync_fifo_basic_test'.
+Traceback (most recent call last):
+  File "/home/krishkarth/Projects/WAVE_DEBUGGER/debugger/cocotb_utils.py", line 53, in wrapper
+    raise AssertionError(f"{len(violations)} violations detected in test '{test_name}'.")
+AssertionError: 3 violations detected in test 'sync_fifo_basic_test'.
+2025-10-07 00:20:46,084 WARNING  cocotb.regression: [49m[39mdebugger.cocotb_utils.sync_fifo_basic_test [31mfailed[49m[39m
+2025-10-07 00:20:46,089 INFO     cocotb.regression: ****************************************************************************************************
+** TEST                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+****************************************************************************************************
+** debugger.cocotb_utils.sync_fifo_basic_test  [31m FAIL [49m[39m         10.10          97.07          0.10  **
+****************************************************************************************************
+** TESTS=1 PASS=0 FAIL=1 SKIP=0                               10.10          97.08          0.10  **
+****************************************************************************************************
+

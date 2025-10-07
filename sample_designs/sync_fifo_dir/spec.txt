@@ -1,0 +1,4 @@
+Design: Synchronous FIFO (sync_fifo)
+Parameters: DATA_WIDTH=8, DEPTH=4
+Ports: clk (input), rst_n (input), wr_en (input), rd_en (input), din[7:0] (input), dout[7:0] (output), full (output), empty (output)
+Behavior: On rising clk, reset initializes pointers. Write increments write pointer if not full. Read increments read pointer if not empty. Full and empty detection uses circular buffer semantics.

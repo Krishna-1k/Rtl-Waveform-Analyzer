@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+*.egg-info/
+build/
+dist/
+
+# cocotb / simulator build artifacts
+sim_build/
+Vtop
+simv*
+*.o
+*.d
+*.so
+*.a
+
+# results, waveforms, logs
+*.fst
+
+# editor and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# other
+*.db
+
+# Do not commit unfinished example designs
+sample_designs/seq_detector_dir/
+sample_designs/clk_divider_dir/
+
+
